@@ -1,0 +1,17 @@
+<html>
+<head>
+	<title>PURE Unobtrusive Rendering Engine</title>
+<!--	<script src="../libs/jquery.js"></script> -->
+	<script src="./js/bind.js"></script>
+</head>
+<body>
+	<script>
+	var url = $b.url;
+	var b = $b.render(
+		url("./resources/template.html").to('body'),
+		url("./resources/data.json"),
+		url("./resources/directive.json")
+	);
+	</script>
+</body>
+</html>

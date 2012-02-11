@@ -1,0 +1,38 @@
+{	
+	".variableTest a": "who",
+	".variableTest a@href": "site",
+
+	".functionTest":function(arg) {
+		var bs = arg.binds;
+		return bs.who() + ": " + bs.site();
+	},
+	
+	".objectTest_x_y": "obj.x.y",
+	".objectTest_x_z": "obj.x.z",
+	
+	".simpleArrayTest li": {
+		"arrayElement<-array": {
+			".": "arrayElement"
+		}
+	},
+	
+	".simpleArrayTest2 li": {
+		"arrayElement2<-obj.array": {
+			".": "arrayElement2"
+		}
+	},
+	
+	".arrayTest li.people":{
+		"person<-obj.people":{
+			".id": "person.id",
+			".who": "person.who",
+			".obj": "person.obj.x",
+			"li.team":{
+				"teamMember<-person.team":{
+					"a.who": "teamMember.who",
+					"a.who@href": "teamMember.id"
+				}
+			}
+		}
+	}
+}

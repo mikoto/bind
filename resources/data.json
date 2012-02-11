@@ -1,0 +1,40 @@
+{
+	"who": "BeeBole!",
+	"site": "http://beebole.com/",
+	"obj": {
+		"x": {
+			"y": "obj.x.y",
+			"z": "obj.x.z"
+		},
+		"array": [
+			"hoge",
+			"foo",
+			"bar"
+		],
+		"people": [
+			{"who":"Susan Braunhardt", "id":1, "team":[
+				{"who":"Kristen Characklis", "id":425},
+				{"who":"Jane Tatum", "id":426},
+				{"who":"Kelly Gonzalez", "id":427},
+				{"who":"Deanne Feldman", "id":428},
+				{"who":"Greg Harrigan", "id":429},
+				{"who":"Jack Lacy", "id":430},
+				{"who":"Shaun Currie", "id":431},
+				{"who":"Peter Glaze", "id":432},
+				{"who":"Sam Reiten", "id":433}
+			]},
+			{"who":"Denny Puckett", "id":2, "obj": {"x":"test"} },
+			{"who":"Thomas Seay", "id":3},
+			{"who":"Joel Ruhlin", "id":4},
+			{"who":"Dorothy Nugent", "id":5},
+			{"who":"Duane Freymann", "id":6, "team":[
+				{"who":"Marc O'Brien", "id":458},
+				{"who":"Duane Millam", "id":459},
+				{"who":"Jennifer Lee", "id":460},
+				{"who":"Alex Bloomfield", "id":461},
+				{"who":"Jennifer Bolton", "id":462},
+				{"who":"Larry Moss", "id":463}
+			]}
+		]
+	}
+}
