@@ -935,7 +935,7 @@ var url = $b.url = function(us) {
 	var parameters = undefined;
 	var chacheData = undefined;
 	var chacheMode = true;
-	var functionQueue = [];
+	var functionQueue = []; // [Todo]
 	
 	url.parent = undefined;
 	url.isUrl = true;
