@@ -45,5 +45,7 @@
 	
 	"dummy": "dummy data",
 	"dummyObj": {},
-	"dummyObj2": { v:"dummy" }
+	"dummyObj2": { "v":"dummy" },
+	"dummyArray": ["dummy"],
+	"dummyArray2": [{"v": "dummy"}]
 }
