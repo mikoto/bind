@@ -16,21 +16,27 @@
 	
 	".simpleArrayTest li": {
 		"arrayElement<-array": {
-			".s": "arrayElement"
+			".s": "arrayElement.v"
 		}
 	},
 	
 	".simpleArrayTest2 li": {
 		"arrayElement2<-obj.array": {
-			".": "arrayElement2"
+			".s": "arrayElement2"
 		}
 	},
 	
 	".arrayTest li.people": {
 		"person<-obj.people": {
 			".id": "person.id",
-			".who": "person.who",
-			".obj": "person.obj.x"
+			"span.who": "person.who",
+			".obj": "person.obj.x",
+			"li.team":{
+				"teamMember<-person.team":{
+					"a.who": "teamMember.who",
+					"a.who@href": "teamMember.id"
+				}
+			}
 		}
 	}
 }
