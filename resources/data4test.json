@@ -17,7 +17,7 @@
 			"sat2-bar"
 		],
 		"people": [
-			{"who":"Susan Braunhardt", "id":1},
+			{"who":"Susan Braunhardt", "id":1, dummy:"Dummy Data", dummyArray:[]},
 			{"who":"Denny Puckett", "id":2, "obj": {"x":"test"} },
 			{"who":"Thomas Seay", "id":3, "team":[
 				{"who":"Kristen Characklis", "id":425},
@@ -30,7 +30,7 @@
 				{"who":"Peter Glaze", "id":432},
 				{"who":"Sam Reiten", "id":433}
 			]},
-			{"who":"Joel Ruhlin", "id":4},
+			{"who":"Joel Ruhlin", "id":4, dummy:"Dummy Data 4", dummyArray:["Dummy"]},
 			{"who":"Dorothy Nugent", "id":5},
 			{"who":"Duane Freymann", "id":6, "team":[
 				{"who":"Marc O'Brien", "id":458},

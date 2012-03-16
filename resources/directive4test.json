@@ -16,7 +16,7 @@
 	
 	".simpleArrayTest li": {
 		"arrayElement<-array": {
-			".": "arrayElement"
+			".s": "arrayElement"
 		}
 	},
 	
@@ -30,13 +30,7 @@
 		"person<-obj.people": {
 			".id": "person.id",
 			".who": "person.who",
-			".obj": "person.obj.x",
-			"li.team":{
-				"teamMember<-person.team": {
-					"a.who": "teamMember.who",
-					"a.who@href": "teamMember.id"
-				}
-			}
+			".obj": "person.obj.x"
 		}
 	}
 }
