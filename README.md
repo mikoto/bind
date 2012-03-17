@@ -2,8 +2,8 @@
 
 
 __Bind.js__ is a Dynamic Template Engine by JavaScript.  
-Model(JSON) is binder to View(HTML).  
-Changes of Model dynamically reflect View.
+Model(JSON) is bound to View(HTML).  
+Modifications of Model dynamically reflect View.
 
 
 ##Example
@@ -47,14 +47,14 @@ Additionally, you will get a bound data as "binds".
 	</div>
 
 
-###Change Model
+###Modify
 
-    binds.text("Model is Changed");
+    binds.text("Modified Text!");
 
-####Result of Model Change
+####Result of Modification
 
 	<div id="template">
-		<p id="selector">Model is Changed</p>
+		<p id="selector">Modified Text!</p>
 	</div>
 
 
@@ -66,6 +66,13 @@ __Bind.js__ supports following type as _Data_
 - String
 - Object
 - Array
+
+
+##References
+
+__Bind.js__ references [__PURE__](http://beebole.com/pure/).  
+For example, specifications of Directive are similar.
+Please see this [document](http://beebole.com/pure/documentation/what-is-a-directive/) about Directive.
 
 ---
 
