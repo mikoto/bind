@@ -31,7 +31,7 @@ Changes of Model dynamically reflect View.
 
 ###Render
 
-A following code transforms the Data(JSON) in Template(HTML)  
+A following code transforms Data(JSON) in Template(HTML).  
 Additionally, you will get a bound data as "binds".
 
 	var binds = $b.render(

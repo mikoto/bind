@@ -1,18 +1,23 @@
 {
 	"who": "BeeBole!",
 	"site": "http://beebole.com/",
+	"array": [
+		{"v":"sat1-hoge", "id":"adsa"},
+		{"v":"sat2-hoge"},
+		{"v":"sat3-hoge"},
+	],
 	"obj": {
 		"x": {
 			"y": "obj.x.y",
 			"z": "obj.x.z"
 		},
 		"array": [
-			"hoge",
-			"foo",
-			"bar"
+			"sat2-hoge",
+			"sat2-foo",
+			"sat2-bar"
 		],
 		"people": [
-			{"who":"Susan Braunhardt", "id":1},
+			{"who":"Susan Braunhardt", "id":1, "dummy":"Dummy Data", "dummyArray":[]},
 			{"who":"Denny Puckett", "id":2, "obj": {"x":"test"} },
 			{"who":"Thomas Seay", "id":3, "team":[
 				{"who":"Kristen Characklis", "id":425},
@@ -25,7 +30,7 @@
 				{"who":"Peter Glaze", "id":432},
 				{"who":"Sam Reiten", "id":433}
 			]},
-			{"who":"Joel Ruhlin", "id":4},
+			{"who":"Joel Ruhlin", "id":4, "dummy":"Dummy Data 4", "dummyArray":["Dummy"]},
 			{"who":"Dorothy Nugent", "id":5},
 			{"who":"Duane Freymann", "id":6, "team":[
 				{"who":"Marc O'Brien", "id":458},
@@ -36,5 +41,11 @@
 				{"who":"Larry Moss", "id":463}
 			]}
 		]
-	}
+	},
+	
+	"dummy": "dummy data",
+	"dummyObj": {},
+	"dummyObj2": { "v":"dummy" },
+	"dummyArray": ["dummy"],
+	"dummyArray2": [{"v": "dummy"}]
 }
