@@ -1,0 +1,82 @@
+<html>
+<head>
+	<title>PURE Unobtrusive Rendering Engine</title>
+	<script src="../../lib/jquery-1.7.1.min.js" type="text/javascript"></script>
+	<script src="../../lib/bind.js" type="text/javascript"></script>
+	
+	<style>
+		#container {
+			width: 400px;
+			padding: 20px;
+			margin: 30px;
+			
+			border: 1px solid #ccc;
+			border-radius: 6px;
+			-webkit-border-radius: 6px;
+			-moz-border-radius: 6px;
+			
+			background-color: #ffffff;
+			-moz-box-shadow: 1px 1px 6px #565555;
+			-webkit-box-shadow: 1px 1px 6px #565555;
+			box-shadow: 1px 1px 6px #565555;
+		}
+		
+		.comments {
+			margin: 0;
+			padding: 0;
+		}
+		
+		.comments li {
+			margin: 0 0 20px 0;
+			padding: 0;
+			list-style: none;
+			border: 1px solid #ccc;
+		}
+		
+		.comments .body {
+			font-size: 100%;
+			color: #333;
+			margin: 0;
+			padding: 20px;
+			
+			background-color: #fff;
+			background: -webkit-gradient(linear,left top,left bottom,from(#eee),to(#fff));
+			background: -moz-linear-gradient(top,#eee,#fff);
+		}
+		
+		.comments .author {
+			font-size: 78%;
+			background-color: #666;
+			color: #fff;
+			text-align: right;
+			padding: 2px 5px 2px 0;
+			margin: 0;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="commentContainer"></div>
+		<p>
+			<input type="text" name="author" value="Guest" id="author" />
+			<input type="text" name="comment_body" value="" id="comment_body" />
+			<input type="button" name="send" value="send" id="send" />
+		</p>
+	</div>
+	<script>
+	var url = $b.url;
+	var b = $b.render(
+		url("template.html").to('#commentContainer'),
+		url("data.json"),
+		url("directive.json")
+	);
+	
+	$('#send').click(function() {
+		b.data.comments.push({
+			body: $('#comment_body').val(),
+			author: $('#author').val()
+		});
+	});
+	</script>
+</body>
+</html>

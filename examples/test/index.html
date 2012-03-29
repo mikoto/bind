@@ -1,0 +1,16 @@
+<html>
+<head>
+	<title>Bind.js</title>
+	<script src="../../lib/bind.js"></script>
+</head>
+<body>
+	<script>
+	var url = $b.url;
+	var b = $b.render(
+		url("template.html").to('body'),
+		url("data.json"),
+		url("directive.json")
+	);
+	</script>
+</body>
+</html>
