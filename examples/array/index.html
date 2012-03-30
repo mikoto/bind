@@ -56,7 +56,15 @@
 </head>
 <body>
 	<div id="container">
-		<div id="commentContainer"></div>
+		<div id="commentContainer">
+		
+		<ul id="comments">
+		    <li>
+		        <p class="body">Comment</p>
+		        <p class="author">Posted by <span>Author</span></p>
+		    </li>
+		</ul>
+		</div>
 		<p>
 			<input type="text" name="author" value="Guest" id="author" />
 			<input type="text" name="comment_body" value="" id="comment_body" />
@@ -64,19 +72,58 @@
 		</p>
 	</div>
 	<script>
-	var url = $b.url;
-	var b = $b.render(
-		url("template.html").to('#commentContainer'),
-		url("data.json"),
-		url("directive.json")
+	var data = {
+	    "comments": [
+	        {
+	            "body": "Comment Test1",
+	            "author": "Mikoto Okumura"
+	        },
+	        {
+	            "body": "Comment Test2",
+	            "author": "Taro Tanaka"
+	        },
+	        {
+	            "body": "Comment Test3",
+	            "author": "Hanako Suzuki"
+	        }
+	    ]
+	};
+	
+	var directive = {   
+	    "li":{
+	        "comment<-comments":{
+	            ".body": "comment.body",
+	            ".author span": "comment.author"
+	        }
+	    }
+	};
+	
+	var binds = $b.render(
+	    "#comments",
+	    data,
+	    directive
 	);
 	
 	$('#send').click(function() {
-		b.data.comments.push({
+		binds.data.comments.push({
 			body: $('#comment_body').val(),
 			author: $('#author').val()
 		});
 	});
+	
+//	var url = $b.url;
+//	var b = $b.render(
+//		url("template.html").to('#commentContainer'),
+//		url("data.json"),
+//		url("directive.json")
+//	);
+	
+//	$('#send').click(function() {
+//		b.data.comments.push({
+//			body: $('#comment_body').val(),
+//			author: $('#author').val()
+//		});
+//	});
 	</script>
 </body>
 </html>
