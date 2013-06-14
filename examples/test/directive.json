@@ -1,45 +1,44 @@
 {
-	".variableTest a": "who",
-	".variableTest a@href": "site",
+    ".variableTest a": "who",
+    ".variableTest a@href": "site",
 
-	
-	".objectTest_x_y": "obj.x.y",
-	".objectTest_x_z": "obj.x.z",
-	
-	".emptyDataTest": "empty",
-	".emptyObjectTest": "emptyObject.v",
-	".emptyArrayTest li": {
-		"e<-emptyArray": {
-			".": "e"
-		}
-	},
-	
-	".simpleArrayTest li": {
-		"arrayElement<-array": {
-			".s": "arrayElement.v"
-		}
-	},
-	
-	".simpleArrayTest2 li": {
-		"arrayElement2<-obj.array": {
-			".s": "arrayElement2"
-		}
-	},
-	
-	".arrayTest li.people": {
-		"person<-obj.people": {
-			".id": "person.id",
-			"span.who": "person.who",
-			".obj": "person.obj.x",
-			"li.team":{
-				"teamMember<-person.team":{
-					"a.who": "teamMember.who",
-					"a.who@href": "teamMember.id"
-				}
-			}
-		}
-	},
+    ".objectTest_x_y": "obj.x.y",
+    ".objectTest_x_z": "obj.x.z",
 
-  ".styleTest@style:color": "color",
-  ".styleTest@style:backgroundColor": "backgroundColor"
+    ".emptyDataTest": "empty",
+    ".emptyObjectTest": "emptyObject.v",
+    ".emptyArrayTest li": {
+        "e<-emptyArray": {
+            ".": "e"
+        }
+    },
+
+    ".simpleArrayTest li": {
+        "arrayElement<-array": {
+            ".s": "arrayElement.v"
+        }
+    },
+
+    ".simpleArrayTest2 li": {
+        "arrayElement2<-obj.array": {
+            ".s": "arrayElement2"
+        }
+    },
+
+    ".arrayTest li.people": {
+        "person<-obj.people": {
+            ".id": "person.id",
+            "span.who": "person.who",
+            ".obj": "person.obj.x",
+            "li.team":{
+                "teamMember<-person.team":{
+                    "a.who": "teamMember.who",
+                    "a.who@href": "teamMember.id"
+                }
+            }
+        }
+    },
+
+    ".styleTest@style:color": "color",
+    ".styleTest@style:backgroundColor": "backgroundColor"
 }
