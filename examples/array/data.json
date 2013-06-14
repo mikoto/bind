@@ -1,16 +1,16 @@
 {
-	"comments": [
-		{
-			"body": "Comment Test1",
-			"author": "Mikoto Okumura"
-		},
-		{
-			"body": "Comment Test2",
-			"author": "Taro Tanaka"
-		},
-		{
-			"body": "Comment Test3",
-			"author": "Hanako Suzuki"
-		}
-	]
+    "comments": [
+        {
+            "body": "Comment Test1",
+            "author": "Mikoto Okumura"
+        },
+        {
+            "body": "Comment Test2",
+            "author": "Taro Tanaka"
+        },
+        {
+            "body": "Comment Test3",
+            "author": "Hanako Suzuki"
+        }
+    ]
 }

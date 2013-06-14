@@ -1,8 +1,8 @@
-{	
-	".comments li":{
-		"comment<-comments":{
-			".body": "comment.body",
-			".author span": "comment.author"
-		}
-	}
+{
+    ".comments li":{
+        "comment<-comments":{
+            ".body": "comment.body",
+            ".author span": "comment.author"
+        }
+    }
 }
