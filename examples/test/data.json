@@ -47,5 +47,8 @@
 	"dummyObj": {},
 	"dummyObj2": { "v":"dummy" },
 	"dummyArray": ["dummy"],
-	"dummyArray2": [{"v": "dummy"}]
+	"dummyArray2": [{"v": "dummy"}],
+
+  "color": "white",
+  "backgroundColor": "red"
 }
