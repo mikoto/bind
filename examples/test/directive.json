@@ -3,8 +3,7 @@
     ".variableTest a@href": "site",
 
     ".functionTest": function(binder) {
-        console.log(binder);
-        return "FunctionTest(who): " + binder.data.who();
+        return "FunctionTest(who): " + binder.data.obj.x.y();
     },
 
     ".objectTest_x_y": "obj.x.y",
