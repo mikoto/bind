@@ -2,6 +2,11 @@
     ".variableTest a": "who",
     ".variableTest a@href": "site",
 
+    ".functionTest": function(binder) {
+        console.log(binder);
+        return "FunctionTest(who): " + binder.data.who();
+    },
+
     ".objectTest_x_y": "obj.x.y",
     ".objectTest_x_z": "obj.x.z",
 
