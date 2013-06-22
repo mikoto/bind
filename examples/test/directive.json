@@ -19,7 +19,11 @@
 
     ".simpleArrayTest li": {
         "arrayElement<-array": {
-            ".s": "arrayElement.v"
+            ".s": "arrayElement.v",
+            "i": function(binder) {
+                console.log(this);
+                debugger;
+            }
         }
     },
 
